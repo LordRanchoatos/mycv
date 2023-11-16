@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
@@ -14,11 +15,11 @@ export class UsersService {
   }
 
   findOne(id: number) {
-    return this.repo.findOne(id);
+    return this.repo.findOneBy({ id });
   }
 
   find(email: string) {
-    return this.repo.find({ email });
+    return this.repo.findBy({ email });
   }
 
   async update(id: number, attrs: Partial<User>) {
