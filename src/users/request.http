@@ -16,3 +16,11 @@ GET http://localhost:3000/auth?email=rancho1sdfff@gmail.com
 
 ###delete a perticualer user with id
 DELETE http://localhost:3000/auth/9
+
+### update a user with given address
+PATCH http://localhost:3000/auth/4
+content-type: application/json
+
+{
+    "password": "johndoe123"
+}
