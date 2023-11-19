@@ -3,8 +3,8 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-    "email": "rancho1sdfff@gmail.com",
-    "password": "ranchofdg1234511"
+    "email": "atolagbedt@gmail.com",
+    "password": "proft001"
 }
 
 ###find a perticualer user with id
