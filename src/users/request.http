@@ -7,17 +7,20 @@ content-type: application/json
     "password": "proft0011"
 }
 
-### user si8gnin 
+### user signin 
 POST http://localhost:3000/auth/signin
 content-type: application/json
 
 {
-    "email": "atolagbedtt@gmail.com",
-    "password": "proft0011"
+    "email": "atolagbedt@gmail.com",
+    "password": "proft001"
 }
 
 ### get the currently signed in user
 GET http://localhost:3000/auth/whoami
+
+### sign out 
+POST http://localhost:3000/auth/signout
 
 ###find a perticualer user with id
 GET http://localhost:3000/auth/1

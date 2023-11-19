@@ -38,6 +38,11 @@ export class UsersController {
     return user;
   }
 
+  @Post('/signout')
+  signout(@Session() session: any) {
+    session.userId = null;
+  }
+
   @Get('/whoami')
   whoAmI(@Session() session: any) {
     return this.usersService.findOne(session.userId);
