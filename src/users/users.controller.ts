@@ -48,6 +48,7 @@ export class UsersController {
     return this.usersService.findOne(session.userId);
   }
 
+  // Data serialization is a serious topic. look into in in other apps.
   // @UseInterceptors(new SerializeInterceptor(UserDto))
   @Get('/:id')
   async findUser(@Param('id') id: string) {
