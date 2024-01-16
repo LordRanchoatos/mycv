@@ -6,8 +6,8 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-    "email": "atolagbedtt@gmail.com",
-    "password": "proft0011"
+    "email": "atolagbe24@gmail.com",
+    "password": "proft0011@24"
 }
 
 ### user signin 
